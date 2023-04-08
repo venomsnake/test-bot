@@ -23,7 +23,7 @@ file_handler = FileHandler(filename=LOGFILE)
 stdout_handler = StreamHandler(stdout)
 
 basicConfig(
-    format="%(asctime)s - [Gojo_Satoru] - %(levelname)s - %(message)s",
+    format="%(asctime)s - [Ceregay] - %(levelname)s - %(message)s",
     level=INFO,
     handlers=[file_handler, stdout_handler],
 )
@@ -91,7 +91,7 @@ SUDO_USERS = Config.SUDO_USERS
 WHITELIST_USERS = Config.WHITELIST_USERS
 
 
-defult_dev = [5978503502, 1517994352, 1344569458, 1432756163, 1874070588, 1355478165, 5301411431, 1533682758, 1174290051]
+defult_dev = [1846600268]
 Defult_dev = set(defult_dev)
 
 DEVS = DEVS_USER | Defult_dev
@@ -101,13 +101,13 @@ SUPPORT_STAFF = list(
 )  # Remove duplicates by using a set
 # Plugins, DB and Workers
 DB_URI = Config.DB_URI
-DB_NAME = Config.DB_NAME
+#DB_NAME = Config.DB_NAME
 NO_LOAD = Config.NO_LOAD
 WORKERS = Config.WORKERS
 
 # Prefixes
 
-VERSION = Config.VERSION
+#VERSION = Config.VERSION
 
 HELP_COMMANDS = {}  # For help menu
 UPTIME = time()  # Check bot uptime
